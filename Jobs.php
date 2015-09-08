@@ -4,11 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Jobs extends CI_Controller {
 
 	function __construct()
-    {
-        parent::__construct();
-        check_logged_in() or redirect('login');
-        $this->load->model('jobs_model', 'jobs');
-    }
+ 	{
+        	parent::__construct();
+        	check_logged_in() or redirect('login');
+        	$this->load->model('jobs_model', 'jobs');
+        }
 	
 	public function index()
 	{
