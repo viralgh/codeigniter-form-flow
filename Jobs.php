@@ -12,8 +12,6 @@ class Jobs extends CI_Controller {
 	
 	public function index()
 	{
-		$data = [];
-
 		$data['job_rec'] = $this->jobs->get_all();
 		$data['msg'] = $this->session->flashdata('msg') ? : '';
 
